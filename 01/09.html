@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>증감연산자</title>
+  </head>
+  <body>
+    <!-- 
+      Y=++Y	  : 전위-기존 변수값에 1더함
+      Y=--Y   : 전위-기존 변수값에 1빼기
+      Y=Y++   : 후위-기존 변수값에 1더함
+      Y=Y--   : 후위-기존 변수값에 1빼기
+  	-->
+    <script>
+      let x=1;      
+      document.write(x++); //x=x+1
+      document.write('<br>');
+      document.write(x); 
+      document.write('<hr>');
+    </script>
+    <script>
+      let z=1;
+      document.write(++z); //z=1+z
+      document.write('<br>');
+      document.write(x); 
+    </script>
+
+    <script>
+      let number=10;
+      alert(number++)//10
+      alert(++number)//12
+      alert(number--)//12(11)
+      alert(--number)//1-11
+
+    </script>
+
+  </body>
+</html>

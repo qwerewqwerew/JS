@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자료형의 변환</title>
+</head>
+<body>
+  <script>
+    /* Nan (Not a Number) 숫자인데 숫자로 표현못함 */
+    alert(typeof(Number("$272")));
+    document.write(Number("$272"));
+  </script>
+  <script>
+    document.write('<hr> Number 함수 안쓰고 다른 자료형에 숫자연산자를 사용하면 자료형이 숫자로 변환<hr> ')
+    const m="52"-0;
+    document.write(typeof(m));
+    const a=true;
+    document.write(typeof(a),'<br>');
+    const n=true-0;
+    document.write(typeof(n),'<br>');
+    const g=1+true;
+    document.write(g, typeof(g),'<br>');//2 , number
+    //true->1, false->0
+    document.write(Number(true), '///' , Number(false));
+  </script>
+</body>
+</html>

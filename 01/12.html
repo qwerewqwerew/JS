@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문자자료형으로 변환하기</title>
+</head>
+<body>
+  <script>
+    const m=550, a=true, n=273 , g=false;
+    document.write(`m=${m} 자료형 ${typeof(String(m))} <br>
+      a=${typeof(String(a))} <br> `)
+    document.write(`${typeof(g+'')} <hr>`)
+
+    /* 대부분의 자료형은 불로 변환시 true 로 변환 */
+    /* 0,NaN, '', null , undefined 만 false 변환 */
+    document.write(`m은 ${typeof(Boolean(m))} <hr>`)
+    
+  </script>
+</body>
+</html>

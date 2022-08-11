@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>소개팅프로그램</title>
+</head>
+<body>
+  <!-- 
+    20대 대상의 소개팅을 준비중입니다.
+    남성은 모집이 끝났는데 여성이 덜 모집되었습니다.
+    참가희망자로 부터 성별과 나이를 입력받아
+    20대 여성이면 결과값을 true, 아니면 false 를 반환하는 프로그램
+    1. 사용자가 성별과 나이를 입력
+    2. 조건비교
+    3. 결과출력
+   -->
+   <script>
+    var gender=prompt("당신의 성별은","여성");
+    var age=prompt("당신의 나이는","20")
+    // age가 20보다 크거나 같고 30미만
+    var result= age>=20 && age<30 && gender == "여성";
+    document.write(result)
+   </script>
+</body>
+</html>

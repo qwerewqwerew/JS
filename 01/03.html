@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>논리자료형(bool,boolean) 과 비교연산자</title>
+  </head>
+  <body>
+    <script>
+      let a = 52;
+      let b = 273;
+      let c = "52";
+      // 템플릿리터럴
+      document.write(`'52 > 273 은' ${a > b} <br />`); //52 > 273 = false
+      document.write(`${a < b} <br />`); //52 < 273 = true
+      document.write(`${a == c} <br />`); // 52=='52' =false;
+      document.write(a === c); // 52==='52' =false;
+      document.write(a != c); // 52!='52' 다르면 true 같으면 false
+      document.write(a !== c); // 52!='52' 다르면 true 같으면 false
+    </script>
+    <script>
+      // 논리합,논리곱 연산자
+      /*
+         A && B => A,B 모두 True
+         A || B => A,B 중 True
+      */
+        const x=(7>6)&&(1>8);//false
+        const y=(7>6)||(1>8);//true
+        const z=!(7>6);//false
+        
+        document.write(`<hr> 7이 6보다 크고 1이 8보다 크면 논리값은? ${x}`)
+        document.write(`<hr> 7이 6보다 크거나 1이 8보다 크면 논리값은? ${y}`)
+        document.write(`<hr> 7이 6보다 크지 않으면 논리값은? ${z}`)
+    </script>
+  </body>
+</html>

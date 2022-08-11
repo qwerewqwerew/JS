@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    /* 
+      숫자를 입력한다.
+      a가 크다.
+      b가 크다. 
+      둘다 같다. 
+      입력취소
+    */
+    const a=Number(prompt('첫번째 숫자'));
+    const b=Number(prompt('두번째 숫자'));
+    if(a>b){//1,2
+      document.write(`<p>첫번째 숫자가 더 큽니다</p>`)
+    }else if(a===b){
+      document.write(`<p>두개의 숫자가 같습니다</p>`)
+    }else if(a<b){
+      document.write(`<p>두번째 숫자가 더 큽니다</p>`)
+    }else{
+      document.write(`<p>입력취소</p>`)
+    }
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
