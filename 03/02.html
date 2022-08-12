@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const todos=['gnb만들기','일기쓰기','깃커밋하기'];
+    todos.push('프로젝트2배너추가');
+    console.log(todos)
+  </script>
+  <script>
+    const fruitsA=['사과','배','바나나'];
+    fruitsA[10]='귤'
+    document.write(`<h1>${fruitsA}</h1>`)
+  </script>
+  <script>
+    const fruitsB=['복숭아','상상','멈춰'];
+    fruitsB[fruitsB.length]='강부원'
+    document.write(`<h1>${fruitsB}</h1>`)
+    // 인덱스번호 2번째 부터 1개의 요소를 삭제
+    fruitsB.splice(2,1)
+    document.write(`<h1>${fruitsB}</h1>`)
+  </script>
+  <script>
+    const animals=['강아지','고양이','스폰지밥','곰','토끼']
+    document.write(`<p>animals는 ${animals} 입니다</p>`)
+    // indexOf('값') '값'이 있으면 해당 인덱스번호, 없으면 -1
+    const index=animals.indexOf('스폰지밥'); //2
+    console.log(index)
+    animals.splice(index,1)
+    document.write(`<p>진짜 animals는 ${animals} 입니다</p>`)
+
+  </script>
+</body>
+</html>

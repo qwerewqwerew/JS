@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{background:#0c3268; color:rgb(243,243,243);}
+    p{margin-top:80px; font-size:2em; font-weight:700; text-align:center; text-shadow:1px 2px 1px #000;}
+    p strong{font-size:2.2em; color:yellow;}
+  </style>
+</head>
+<body>
+  <!-- switch 문으로 사용자로부터 관심있는 세션을 입력받고 해당   교실을 출력하는 프로그램 작성
+    세션종류: 1-마케팅, 2-개발, 3-디자인 
+    세션종류: 마케팅(201호), 개발(203호), 디자인(205호)
+  
+  -->
+  <script>
+    let session=prompt("관심 세션을 선택해 주세요. 1-마케팅, 2-개발, 3-디자인");
+    switch(session){
+      case "1" : document.write(`<p>마케팅 세션은 <strong>201호</strong>에서 진행됩니다.</p>`)
+      break;
+      case "2" : document.write(`<p>개발 세션은 <strong>203호</strong>에서 진행됩니다.</p>`)
+      break;
+      case "3" : document.write(`<p>디자인 세션은 <strong>205호</strong>에서 진행됩니다.</p>`)
+      break;
+      default: alert("해당 과목은 개설되지 않았습니다");
+    }
+  </script>
+</body>
+</html>

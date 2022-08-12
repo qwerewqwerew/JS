@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>array</title>
+  </head>
+  <body>
+    <!-- 숫자,문자,논리,배열, -->
+    <script>
+      // 자료형이 배열이 되면 인덱스번호를 할당받음. 0~
+
+      let srt = [];
+      srt = "몇분오셨어요";
+      document.write(
+        `${srt}<br>${srt[3]}<br>${srt[2]}${srt[3]}${srt[0]}
+        <br>${srt[srt.length-1]} `
+      );
+      console.log(srt.length)
+    </script>
+    <script>
+      // array=[숫자형,문자형,논리형,함수형,객체형,배열]
+      const arr=[273,'String',true,function(){},{},[273,105]]
+      console.log(arr[0+1])
+    </script>
+    <script>
+     // var arr1=[];
+     // var arr1=[,,,];
+     var arr1=new Array();
+      arr1[0]='zero';
+      arr1[1]='하나';
+      arr1[3]='몇번';
+      document.write('<hr>'+arr1+'<hr>'+arr1.length+'<hr>'+arr1[arr1.length-1])
+
+    </script>
+  </body>
+</html>
