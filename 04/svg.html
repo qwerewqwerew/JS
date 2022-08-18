@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 300px;
+        position: relative;
+        margin: auto;
+      }
+      .box svg{
+        position: absolute;
+        left: 50px;
+        width:50px;
+      }
+      .box svg rect{
+        stroke:orange;
+        fill: orangered;
+      }
+      #icon #mo {
+        fill: red;
+        opacity: 0;
+      }
+      @media screen and (max-width: 500px) {
+        #icon #mo {
+          fill: red;
+          opacity: 0.5;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <svg id="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 49">
+        <ellipse id="mo" class="cls-1" cx="29" cy="33.5" rx="13" ry="12.5" />
+        <rect x="14.03" y="31.64" width="16" height="2" />
+        <rect x="14" y="23.64" width="8" height="2" />
+        <path
+          d="M26,5.64H8v36H36v-26h0Zm8,34H10v-32H24v10H34Zm-8-24V8.46l7.17,7.18Z"
+        />
+      </svg>
+    </div>
+  </body>
+</html>
