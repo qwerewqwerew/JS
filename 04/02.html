@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>scope</title>
+  </head>
+  <body>
+    <h1>변수와 함수의 유효범위</h1>
+    <script>
+      function addNum() {
+        let sum = 10 + 20;
+        return sum; //변수 sum 은 중괄호 내부(함수의블록)에 선언된 지역변수 이므로 갖혀서 실행안됨
+      }
+      // addNum();
+      // console.log(sum);
+    </script>
+    <script>
+      function addNum2() {
+        var sum = 10 + 20; //지역변수
+        multi = 10 * 20; //전역변수 , 블럭안에 있어도 키워드 없다. 전국구
+        total = sum;
+        return total;
+      }
+      addNum2();
+      console.log("multi=" + multi);
+      console.log("total=" + total);
+      // console.log("sum=" + sum);
+    </script>
+    <script>
+      console.log(multi);
+
+      var x = 10;
+      function displayNumber() {
+        //var 변수의 호이스팅
+        console.log("x is" + x);
+        console.log("y is" + y);
+        var y ;
+      }
+      displayNumber();
+    </script>
+  </body>
+</html>

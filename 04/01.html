@@ -8,14 +8,49 @@
   </head>
   <body>
     <script>
-      // 선언적함수 js 스코프
-      function send(a,b,c) {
-        alert(a + "안녕하세요");
-        document.write(b + "<h1>반갑습니다</h1>"+c);
-      }
-      //send('부엉이','종민이','고라니');
-      //alert();  
-    </script>
+      //호이스팅
+      fn2(500, 800);
 
+      // 선언적함수의 사용
+      function fn() {
+        document.write("안녕하세요");
+      }
+      fn();
+      fn();
+      fn();
+      fn();
+      fn();
+
+      function fn2(x, y) {
+        console.log(x + y);
+        console.log(x, y);
+      }
+
+      fn2(10, 5);
+      //fn2(1556680, 500000000000000000);
+    </script>
+    <script>
+      const mango = function () {
+        document.write(`망고 엉덩이...1 씰룩<br>`);
+        document.write(`망고 엉덩이...2 씰룩<br>`);
+        document.write(`망고 엉덩이...3 씰룩<br>`);
+        document.write(`망고 엉덩이...4 씰룩<br>`);
+        document.write(`망고 엉덩이...5 씰룩<br>`);
+        document.write("");
+      };
+      mango();
+      mango();
+      const add1 = function (a, b) {
+        let c = a + b;
+        document.write(c);
+      };
+      add1(5, 6);
+    </script>
+    <script>
+      // 즉시실행함수
+      (function (x, y) {
+        document.write(`<h1>즉시실행함수</h1>=${x + y}`);
+      })(10, 20);
+    </script>
   </body>
 </html>
