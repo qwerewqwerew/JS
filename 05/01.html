@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>객체선언</title>
+</head>
+<body>
+  <!-- 객체는 변수,함수를 묶어서 좀더 복잡한 일을 시키는거
+      배열은 요소에 인덱스번호로 접근하지만 객체는 키로 접근
+      키:프로퍼티,메서드
+      벨류:값
+  -->
+  <script>
+    // 객체선언1
+    var dog=new Object();
+    dog={
+      //키:벨류,
+      name:'mango',
+      features:'maltese'
+    }
+    document.write(dog.name+'<hr>')
+    //2
+    const baby={
+      name:'빛별이',
+      features:'귀여움',
+      age:'5짤'
+    }
+    document.write(baby.name+baby.features+baby.age+"<hr>")
+    const pet={
+      name:'강부원',
+      eat:function(food){
+        alert(this.name+'은/는'+food+'을/를 주워 먹습니다') 
+      }
+    }
+    //메소드 호출
+    pet.eat('프레즐')
+    let princess;
+    princess={
+      name:"김망고"
+    }
+    document.write(`<p>공주님${princess.name}</p>`)
+  </script>
+</body>
+</html>
