@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>콜백함수</title>
+  </head>
+  <body>
+    <p>콜백함수: 함수에 파라미터로 들어가는 함수</p>
+    <hr>
+    <script>
+      const test = function (y) {
+        
+        for (i = 0; i < 10; i++) {
+          y(i)
+        }
+      };
+      const fn=function(x){
+        document.write(`${x}번째 망고`)
+      }
+      test(fn)
+    </script>
+  </body>
+</html>

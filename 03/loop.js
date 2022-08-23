@@ -11,9 +11,10 @@ for (i = 0; i < menu1.length; i++) {
 }
 
 //forEach
+//menu.forEach(function(){})
 var menu2 = document.querySelectorAll(".menu2 li");
-menu2.forEach(function (element) {
-  element.style.color = "blue";
+menu2.forEach(function (a) {
+  a.style.color = "blue";
 });
 //for in -> index
 
