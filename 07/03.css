@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+.gnb {
+  width: 200px;
+  margin: 20px auto 0;
+  text-align: center;
+  text-indent: 10px;
+}
+.gnb > li > a {
+  display: block;
+  height: 36px;
+  background: #390;
+  cursor: pointer;
+  line-height: 3em;
+  border-top: 1px dotted #fff;
+  color: #fff;
+}
+.gnb .sub li {
+  height: 36px;
+  line-height: 3em;
+  background: #cf9;
+}
+.gnb .sub li a {
+  display: block;
+  width: 100%;
+  color: #222;
+}
+.gnb .sub li:hover {
+  background: #cf0;
+}
+.sub {
+  transition: height 0.5s;
+  overflow: hidden;
+  height: 1px;
+}
+
+.sub.on {
+  height: 110px;
+}
